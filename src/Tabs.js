@@ -26,7 +26,6 @@ class Tabs extends Component {
 
   setTabContent() {
     let { tabsConfigLocal, currentTab } = this.state;
-    console.log(currentTab);
 
     import(`./${tabsConfigLocal[currentTab]['path']}`)
       .then((component) => {
